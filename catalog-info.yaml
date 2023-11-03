@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1beta1
+kind: Component
+metadata:
+  name: portale-marghe1
+  metadata:
+  annotations:
+    argocd/app-name: portale-marghe1
+    backstage.io/adr-location: docs/adr
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: portale-marghe1
+    backstage.io/kubernetes-namespace: portale-marghe1
+    github.com/project-slug: neenspa/portale-marghe1
+    janus-idp.io/tekton-enabled: 'true'
+  links:
+    - url: https://console-openshift-console.apps.democp.vega.local/pipelines/ns/portale-marghe1/
+      title: Pipelines
+      icon: web
+    - url: https://console-openshift-console.apps.democp.vega.local/k8s/ns/portale-marghe1/deployments/portale-marghe1
+      title: Deployment
+      icon: web
+    - url: https://devspaces.apps.democp.vega.local/#https://github.com/neenspa/portale-marghe1?che-editor=che-incubator/che-code/latest&devfilePath=.devfile-vscode.yaml
+      title: OpenShift Dev Spaces (VS Code)
+      icon: web
+spec:
+  type: website
+  owner: user:guest
+  lifecycle: production
